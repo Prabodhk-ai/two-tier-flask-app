@@ -25,7 +25,7 @@ services:
   flask-app:
     #image: trainwithshubham/two-tier-flask-app:latest
     build:
-      context: ./my-app
+      context: /var/lib/jenkins/workspace/demo-cicd/my-app
     container_name: flask-app
     ports:
       - "5000:5000"
